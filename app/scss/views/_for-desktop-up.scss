@@ -83,6 +83,11 @@
 
             padding: 0 4rem;
 
+            & .desktop-inner-container{
+                // outline: 1px solid black;
+                max-width: 35rem;
+            }
+
             & h1{
                 margin-bottom: 1.75rem;
             }
@@ -159,6 +164,10 @@
             align-items: center;
 
             padding: 2rem 3rem;
+
+            & .bottom-inner-container{
+                max-width: 30rem;
+            }
         }
     }
 
