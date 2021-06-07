@@ -1,0 +1,166 @@
+@media (min-width: 1200px){
+
+    h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    
+    h2{
+        font-size: 1rem;
+        letter-spacing: .3rem;
+    }
+
+    a{
+        font-size: .8rem;
+    }
+
+    .top{
+        display: flex;
+
+        & .top-nav{
+            justify-content: flex-start;
+            padding: 3rem 3.5rem;
+        }
+
+        & .top-burger{
+            display: none;
+        }
+
+        & .top-links{
+
+            position: relative;
+            transform: none;
+
+            padding: 0;
+            background-color: transparent;
+
+            & a{
+                font-weight: 400;
+                color: $bg-white;
+                padding-bottom: .5rem;
+            }
+
+            & a:hover{
+                text-shadow: 0px 0px 2px white;
+                border-bottom: 1px solid white;
+            }
+
+            & ul{
+                justify-content: flex-start;
+                width: 100%;
+                margin-left: 4rem;
+
+                & li:not(:first-of-type){
+                    margin: 0 0 0 2rem;
+                }
+            }
+        }
+
+
+
+        // hide mobile compenents
+        & .top-image{
+            display: none;
+        }
+
+        & .top-content{
+            display: none;
+        }
+
+        // show desktop components
+        & .desktop-image{
+            display: inline-block;
+        }
+
+        & .desktop-content{
+            display: block;
+            width: 40vw;
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0 4rem;
+
+            & h1{
+                margin-bottom: 1.75rem;
+            }
+        
+            & p{
+                margin-bottom: 1.75rem;
+                color: $font-gray;
+            }
+        
+            & a{
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+        
+                text-transform: uppercase;
+                color: $font-black;
+        
+                font-size: 1rem;
+                letter-spacing: .4rem;
+            }
+        
+            & a:hover{
+                color: $font-gray;
+            }
+        
+            & a:hover img{
+                opacity: 0.3;
+            }
+        
+            & a img{
+                width: 15%;
+                display: block;
+        
+                margin-left: 2rem;
+            }
+        }
+
+        & .desktop-actions{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            & img{
+
+                display: block;
+                width: auto;
+                
+                padding: 1rem 2.08rem;
+        
+                background: $font-black;
+                cursor: pointer;
+            }
+        
+            & img:hover{
+                background: $font-dark-gray;
+                transition: background 200ms ease-in-out;
+            }
+        }
+
+    }
+
+    .bottom{
+        display: flex;
+        & .bottom-content{
+
+            width: 40%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 2rem 3rem;
+        }
+    }
+
+
+}

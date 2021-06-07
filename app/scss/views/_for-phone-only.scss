@@ -1,0 +1,220 @@
+img{
+    // removing white space at the bottom of the image
+    display: none;
+    width: 100%;
+}
+
+//  class name to be toggled when clicking past carousell - displays current image
+.img-current{
+    display: block;
+    // animation: sliderTransition 1s;
+}
+
+@keyframes sliderTransition{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+.top{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.top-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+
+.top-burger{
+    position: absolute;
+    left: 0;
+
+    margin-left: 1rem;
+
+    cursor: pointer;
+
+    & img{
+        display: block;
+    }
+}
+
+.top-close{
+    position: absolute;
+    left: 0;
+
+    margin-left: 1rem;
+
+    z-index: 999;
+
+    cursor: pointer;
+
+    & img{
+        display: block;
+    }
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+
+.top-logo{
+    & img{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.top-links{
+    display: block;
+
+    position: absolute;
+    top: 0;
+
+    transform: translateX(100%);
+    transition: transform 200ms ease-in-out;
+
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: $bg-white;
+
+    & a{
+        font-weight: 700;
+        color: $font-black;
+    }
+
+    & ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 77%;
+        margin: 0 0 0 auto;
+    }
+}
+
+.active{
+    transform: none;
+}
+
+.top-image{
+    position: relative;
+}
+
+.top-actions{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    & img{
+
+        display: block;
+        width: auto;
+        
+        padding: 1rem 1.25rem;
+
+        background: $font-black;
+        cursor: pointer;
+    }
+
+    & img:hover{
+        background: $font-dark-gray;
+        transition: background 200ms ease-in-out;
+    }
+}
+
+.top-content{
+    width: 80%;
+    margin: 0 auto;
+
+    padding: 4rem 0;
+
+    & h1{
+        margin-bottom: 1rem;
+    }
+
+    & p{
+        margin-bottom: 3rem;
+        color: $font-gray;
+    }
+
+    & a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+
+        text-transform: uppercase;
+        color: $font-black;
+
+        font-size: 1rem;
+        letter-spacing: .4rem;
+    }
+
+    & a:hover{
+        color: $font-gray;
+    }
+
+    & a:hover img{
+        opacity: 0.3;
+    }
+
+    & img{
+        width: 15%;
+        display: block;
+
+        margin-left: 2rem;
+    }
+}
+
+// hide desktop components
+.desktop-image, 
+.desktop-content{
+    display: none;
+}
+
+.bottom-image-1 img,
+.bottom-image-2 img{
+    display: block;
+}
+
+.bottom-content{
+    width: 80%;
+    margin: 0 auto;
+
+    padding: 4rem 0;
+
+    & h2{
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    & p{
+        color: $font-gray;
+    }
+}
