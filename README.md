@@ -18,6 +18,7 @@ Users can:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- [GSAP](https://greensock.com/gsap/) - JS library
 
 ### What I learned
 
