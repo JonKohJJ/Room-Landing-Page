@@ -29,3 +29,7 @@ Users can:
 ### Continued development
 
 Integrate animation when slide changes and adding more pages and functionalities to make it a multi-page web application.
+
+## Author
+
+- Website - [Jonathan Koh](https://jonathankoh.dev/)
