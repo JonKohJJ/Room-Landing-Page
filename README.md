@@ -16,7 +16,6 @@ Users can:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [GSAP](https://greensock.com/gsap/) - JS library
 - [SASS](https://sass-lang.com/) - CSS Pre-Processor
