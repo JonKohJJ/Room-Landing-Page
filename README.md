@@ -9,7 +9,7 @@ Users can:
 
 ### Links
 
-- Live Site URL: https://jonkohjj.github.io/Room-Landing-Page/
+- Live Site URL: [https://jonkohjj.github.io/Room-Landing-Page/](https://jonkohjj.github.io/Room-Landing-Page/)
 
 ### Built with
 
